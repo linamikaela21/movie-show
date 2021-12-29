@@ -1,11 +1,15 @@
-import './App.css';
+import { RouterWeb } from './RouterWeb'
+import { NavBar } from './components/NavBar/NavBar.jsx'
+import { Footer } from './components/Footer/Footer'
+import './App.css'
 
-function App() {
+export const App = () => {
+  
   return (
-    <div className="App">
-
+    <div className='App'>
+      <NavBar />
+      <RouterWeb />
+      <Footer />
     </div>
-  );
+  )
 }
-
-export default App;

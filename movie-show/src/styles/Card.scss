@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.columnContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: $color-azul;
+    border-radius: 5rem;
+    font-size: x-large;
+    color: $color-azul;
+    padding: 2rem;
+}
+
+.cardTitle {
+    color: $color-blanco;
+}
