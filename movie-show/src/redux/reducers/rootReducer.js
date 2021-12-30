@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const rootReducer = (state = initialState, action) => {
-  console.log('state', state, 'action =>', action.type, 'payload =>', action.payload)
+  //console.log('state', state, 'action =>', action.type, 'payload =>', action.payload)
   switch (action.type) {
 
     case GET_MOVIES:

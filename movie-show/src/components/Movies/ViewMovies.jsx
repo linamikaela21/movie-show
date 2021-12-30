@@ -4,7 +4,6 @@ import { Carrusel } from "../Common/Carrusel"
 export const ViewMovies = ({ allMovies }) => {
 
     const arrayMovies = allMovies.map(x => x.show)
-    console.log(arrayMovies.map(x => x.language), 'ArrayMovies');
     const carouselItems =
         arrayMovies?.map(movie => (
             <BigCard

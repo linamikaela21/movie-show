@@ -10,8 +10,6 @@ export const CardDetails = (props) => {
 
     const funcDescription = () => { return { __html: props?.summary } }
 
-    console.log(props.average, 'PROPPPPPPPPPPPPPPPPPPPS')
-
     return (
         (props.image === null || typeof props.image === 'undefined')
             ? <div className='rowDetailsContent' style={{ height: '70%', width: '80%' }}>
