@@ -21,7 +21,7 @@ export const CardDetails = (props) => {
                     {(typeof props.rating === 'undefined' || props.rating.average === null) ? null : <h1 className='cardText'><BsFillStarFill size={30} style={{ paddingRight: '0.5rem' }} />{props?.rating.average}</h1>}
                 </div>
                 <div className='columnContent' style={{ display: 'flex', justifyContent: 'center', height: '30rem', width: '25rem' }}>
-                    <img className='iframe' src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UXBlhOpVhgTj8_UFYtD2blL9FeMkQUoIA&usqp=CAU`} alt={props?.name} width='300rem' height='450rem' />
+                    <img className='iframe' src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UXBlhOpVhgTj8_UFYtD2blL9FeMkQUoIA&usqp=CAU`} alt={props?.name} max-width='10rem' max-height='350rem' />
                 </div>
             </div>
             :

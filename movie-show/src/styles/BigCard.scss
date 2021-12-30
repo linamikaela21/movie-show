@@ -12,7 +12,7 @@
 .image {
   opacity: 1;
   display: block;
-  width: 25em;
+  max-width: 25em;
   height: 25em;
   transition: 0.3s ease;
   backface-visibility: hidden;
