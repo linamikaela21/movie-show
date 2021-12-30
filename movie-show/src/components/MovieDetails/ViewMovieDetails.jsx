@@ -17,7 +17,7 @@ export const ViewMovieDetails = ({ movieDetails }) => {
                     genres={movieDetails?.genres}
                     language={movieDetails?.language}
                     summary={movieDetails?.summary}
-                    average={movieDetails?.rating.average}
+                    rating={movieDetails?.rating}
                 />
             </div>
             )

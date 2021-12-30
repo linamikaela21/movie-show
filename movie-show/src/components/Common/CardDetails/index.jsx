@@ -20,7 +20,7 @@ export const CardDetails = (props) => {
                     <h3 className='cardText'>{genders}</h3>
                     <h3 className='cardText'>{props?.language}</h3>
                     <h3 className='cardText' dangerouslySetInnerHTML={funcDescription()}></h3>
-                    {props?.average ? <h1 className='cardText'><BsFillStarFill size={30} style={{ paddingRight: '0.5rem' }} />{props?.average}</h1> : null}
+                    {(typeof props.rating === 'undefined' || props.rating.average === null) ? null : <h1 className='cardText'><BsFillStarFill size={30} style={{ paddingRight: '0.5rem' }} />{props?.rating.average}</h1>}
                 </div>
                 <div className='columnContent' style={{ display: 'flex', justifyContent: 'center', height: '30rem', width: '25rem' }}>
                     <img className='iframe' src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UXBlhOpVhgTj8_UFYtD2blL9FeMkQUoIA&usqp=CAU`} alt={props?.name} width='300rem' height='450rem' />
@@ -33,7 +33,7 @@ export const CardDetails = (props) => {
                     <h3 className='cardText'>{genders}</h3>
                     <h3 className='cardText'>{props?.language}</h3>
                     <h3 className='cardText' dangerouslySetInnerHTML={funcDescription()}></h3>
-                    {props?.average ? <h1 className='cardText'><BsFillStarFill size={30} style={{ paddingRight: '0.5rem' }} />{props?.average}</h1> : null}
+                    {(typeof props.rating === 'undefined' || props.rating.average === null) ? null : <h1 className='cardText'><BsFillStarFill size={30} style={{ paddingRight: '0.5rem' }} />{props?.rating.average}</h1>}
                 </div>
                 <div className='columnContent' style={{ display: 'flex', justifyContent: 'center', height: '30rem', width: '25rem' }}>
                     <img className='iframe' src={props?.image.original} alt={props?.name} width='300rem' height='450rem' />
