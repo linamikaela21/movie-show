@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .carousel-container {
     display: flex;
     align-items: center;
@@ -7,7 +9,7 @@
   
   .carousel-items-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .carousel-items-pages {
@@ -16,5 +18,15 @@
     justify-content: center;
     padding: 1%;
     font-weight: bold;
-    color: black;
+    color: $color-negro;
+  }
+
+  .buttons {
+    color: $color-rojo;
+    background-color: transparent;
+    border: none;
+  }
+
+  .buttons:hover {
+    color: $color-negro;
   }

@@ -1,36 +1,21 @@
 @import "./variables.scss";
 
-// @media (max-width: 640px) {
-//   .homeContent:before {
-//     display: block;
-//     width: 100%;
-//     background-color: aqua;
-//   }
-// }
-
-// @media (min-width: 640px) and (max-width: 800px) {
-//   .homeContent:after {
-//     display: flex;
-//     background-color: gold;
-//   }
-// }
-
 .homeContent {
   display: flex;
   justify-content: space-around;
   align-self: stretch;
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
-  background-color: $color-celeste;
+  background-color: $color-gris;
 }
 
-@media screen and (max-aspect-ratio: 13/9) {
-  .homeContent {
-    flex-direction: column;
-    align-content: center;
-    padding-right: 0em;
-    padding-left: 3em;
-    padding-bottom: 3rem;
-  }
-}
+// @media screen and (max-aspect-ratio: 13/9) {
+//   .homeContent {
+//     flex-direction: column;
+//     align-content: center;
+//     padding-right: 0em;
+//     padding-left: 3em;
+//     padding-bottom: 3rem;
+//   }
+// }

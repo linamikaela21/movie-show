@@ -5,7 +5,7 @@ import {
 
 const initialState = {
   movies: [],
-  moviesDetails: []
+  movieDetails: []
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -16,7 +16,7 @@ const rootReducer = (state = initialState, action) => {
       return { ...state, movies: action.payload }
 
     case GET_MOVIE_DETAILS:
-      return { ...state, moviesDetails: action.payload }
+      return { ...state, movieDetails: action.payload }
 
     default:
       return state

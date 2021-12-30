@@ -9,11 +9,10 @@ export const Movies = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        const res = dispatch(getMovies())
-        console.log(res, 'ACAAAAAAAAAAAAAAAAAa');
+        dispatch(getMovies())
     }, [dispatch])
 
-    
+
     // //PAGINADO
     const allMovies = useSelector(state => state.movies)
     const [currentPage, setCurrentPage] = useState(1)
@@ -21,11 +20,9 @@ export const Movies = () => {
     const lastMovie = currentPage * MoviesPerPage
     const firstMovie = lastMovie - MoviesPerPage
     const movies = allMovies.slice(firstMovie, lastMovie)
-    
+
     const pages = pageNumber => setCurrentPage(pageNumber)
 
-    console.log(allMovies, 'USESELEECTOR');
-    
     return (
         <div className=''>
             <div className='rowContainer'>

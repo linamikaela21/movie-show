@@ -19,7 +19,6 @@ export const getMovies = () => {
 }
 
 export const getMoviesDetails = (id) => {
-  console.log(id, 'ID')
   return async function (dispatch) {
     try {
       const movieId = await axios.get(`${URL_MOVIE_DETAILS}/${id}`)
