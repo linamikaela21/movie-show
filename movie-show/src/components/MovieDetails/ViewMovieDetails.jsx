@@ -5,7 +5,7 @@ export const ViewMovieDetails = ({ movieDetails }) => {
 
     return (
         <div className='container'
-            style={{ paddingTop: '3rem', paddingBottom: '3rem' }}>
+            style={{ paddingTop: '1.2rem', paddingBottom: '1.2rem' }}>
             <div className='columnDetailsContent'>
                 <Link to={'/movies'}>
                     <button className='button'>Go Back</button>
@@ -17,6 +17,7 @@ export const ViewMovieDetails = ({ movieDetails }) => {
                     genres={movieDetails?.genres}
                     language={movieDetails?.language}
                     summary={movieDetails?.summary}
+                    average={movieDetails?.rating.average}
                 />
             </div>
             )

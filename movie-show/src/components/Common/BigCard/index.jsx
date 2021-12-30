@@ -12,6 +12,7 @@ export const BigCard = (props) => {
                     <div className="middle">
                         <div>
                             <h2 className='bigCardText' style={{ fontSize: `${props.fontSize}` }}>{props.title}</h2>
+                            <h2>{props.language}</h2>
                         </div>
                         <div className='container'>
                             <Link to={`/${props.link}`}>
@@ -27,7 +28,8 @@ export const BigCard = (props) => {
                     <img src={props.image?.medium} alt='No found' className='iframe' height={props.height} width={props.width} />
                     <div className="middle">
                         <div>
-                            <h2 className='bigCardText' style={{ fontSize:`${props.fontSize}`}}>{props.title}</h2>
+                            <h2 className='bigCardText' style={{ fontSize: `${props.fontSize}` }}>{props.title}</h2>
+                            <h2 className='bigCardText'>{props.language}</h2>
                         </div>
                         <div className='container'>
                             <Link to={`/${props.link}`}>

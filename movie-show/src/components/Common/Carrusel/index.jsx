@@ -16,7 +16,7 @@ export const Carrusel = ({ items, n }) => {
     if (slide === 1) setSlide(totalSlides)
     else setSlide(slide - 1)
   }
-  
+
   const next = () => {
     if (slide === totalSlides) setSlide(1)
     else setSlide(slide + 1)
