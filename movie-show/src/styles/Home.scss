@@ -10,12 +10,10 @@
   background-color: $color-gris;
 }
 
-// @media screen and (max-aspect-ratio: 13/9) {
-//   .homeContent {
-//     flex-direction: column;
-//     align-content: center;
-//     padding-right: 0em;
-//     padding-left: 3em;
-//     padding-bottom: 3rem;
-//   }
-// }
+@media screen and (max-aspect-ratio: 13/9) {
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}

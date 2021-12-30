@@ -14,8 +14,8 @@ export const CardDetails = (props) => {
             ? <div className='rowDetailsContent' style={{ height: '70%', width: '80%' }}>
                 <div className='columnContent' style={{ height: '100%', width: '45rem' }}>
                     <h1 className='cardTitle'>{props?.name}</h1>
-                    <h3 className='cardText'>Genders: {genders}</h3>
-                    <h3 className='cardText'>Languaje: {props?.language}</h3>
+                    <h3 className='cardText'>{genders}</h3>
+                    <h3 className='cardText'>{props?.language}</h3>
                     <h3 className='cardText' dangerouslySetInnerHTML={funcDescription()}></h3>
                 </div>
                 <div className='columnContent' style={{ display: 'flex', justifyContent: 'center', height: '30rem', width: '25rem' }}>
@@ -26,8 +26,8 @@ export const CardDetails = (props) => {
             <div className='rowDetailsContent' style={{ height: '70%', width: '80%' }}>
                 <div className='columnContent' style={{ height: '100%', width: '45rem' }}>
                     <h1 className='cardTitle'>{props?.name}</h1>
-                    <h3 className='cardText'>Genders: {genders}</h3>
-                    <h3 className='cardText'>Languaje: {props?.language}</h3>
+                    <h3 className='cardText'>{genders}</h3>
+                    <h3 className='cardText'>{props?.language}</h3>
                     <h3 className='cardText' dangerouslySetInnerHTML={funcDescription()}></h3>
                 </div>
                 <div className='columnContent' style={{ display: 'flex', justifyContent: 'center', height: '30rem', width: '25rem' }}>

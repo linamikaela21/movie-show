@@ -24,8 +24,7 @@
   display: block;
   width: 15em;
   background-color: $color-gris;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
   transition: 0.5s ease;
   opacity: 0;
@@ -35,7 +34,6 @@
   border-radius: 2rem;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-justify: center;
 }
 
 .bigCardContent:hover .image {
@@ -50,4 +48,10 @@
 .bigCardText {
   color: $color-rojo;
   padding: 1rem 1rem;
+}
+
+@media screen and (max-aspect-ratio: 13/9) {
+  .carousel-items-items {
+    display: block;
+  }
 }

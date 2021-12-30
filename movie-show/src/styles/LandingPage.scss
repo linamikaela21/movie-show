@@ -53,3 +53,23 @@
     background-color: $color-negro;
     border: solid 0.2rem $color-blanco;
 }
+
+@media screen and (max-aspect-ratio: 13/9) {
+    .divTitle {
+        background-color: $color-rojo;
+        padding: 0.5rem;
+        height: 55%;
+        width: 50%;
+        padding-bottom: 0.5%;
+        padding-top: 0%;
+    }
+    .title {
+        font-size: 8rem;
+        background-color: transparent;
+    }
+    .buttonWelcome {
+        font-size: 1.5rem;
+        background-color: $color-blanco;
+        color: $color-rojo;
+    }
+}

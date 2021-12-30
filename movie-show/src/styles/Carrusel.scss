@@ -1,32 +1,40 @@
 @import "./variables.scss";
 
 .carousel-container {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-  }
+  display: flex;
+  align-items: center;
+  padding: 3%;
+}
 
-  
+.carousel-items-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-items-pages {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-weight: bold;
+  color: $color-negro;
+}
+
+.buttons {
+  color: $color-rojo;
+  background-color: transparent;
+  border: none;
+}
+
+.buttons:hover {
+  color: $color-negro;
+}
+
+@media screen and (max-aspect-ratio: 13/9) {
+  .carousel-container {
+    padding: 0.5rem;
+  }
   .carousel-items-items {
-    display: flex;
-    justify-content: space-around;
+    display: block;
   }
-
-  .carousel-items-pages {
-    font-size: x-large;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    font-weight: bold;
-    color: $color-negro;
-  }
-
-  .buttons {
-    color: $color-rojo;
-    background-color: transparent;
-    border: none;
-  }
-
-  .buttons:hover {
-    color: $color-negro;
-  }
+}
