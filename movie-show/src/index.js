@@ -10,7 +10,7 @@ import Store from './redux/store/'
 
 const { persistor, store } = Store
 
-persistor.purge()
+//persistor.purge()
 
 ReactDOM.render(
   <React.StrictMode>
@@ -29,19 +29,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <PersistGate persistor={persistor}>
-        <Router>
-          <App />
-        </Router>
-      </PersistGate>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
-)
