@@ -32,9 +32,10 @@
 
 @media screen and (max-aspect-ratio: 13/9) {
   .carousel-container {
-    padding: 0.5rem;
+    padding: 0;
   }
   .carousel-items-items {
     display: block;
+    justify-content: center;
   }
 }
