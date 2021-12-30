@@ -10,10 +10,8 @@ export const BigCard = (props) => {
                 <div className='bigCardContent'>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL6UXBlhOpVhgTj8_UFYtD2blL9FeMkQUoIA&usqp=CAU' alt='No found' className='iframe' height={props.height} width={props.width} />
                     <div className="middle">
-                        <div className=''>
+                        <div>
                             <h2 className='bigCardText' style={{ fontSize: `${props.fontSize}` }}>{props.title}</h2>
-                        </div>
-                        <div className='container'>
                         </div>
                         <div className='container'>
                             <Link to={`/${props.link}`}>
@@ -28,7 +26,7 @@ export const BigCard = (props) => {
                 <div className='bigCardContent'>
                     <img src={props.image?.medium} alt='No found' className='iframe' height={props.height} width={props.width} />
                     <div className="middle">
-                        <div className=''>
+                        <div>
                             <h2 className='bigCardText' style={{ fontSize:`${props.fontSize}`}}>{props.title}</h2>
                         </div>
                         <div className='container'>

@@ -1,6 +1,5 @@
 import { useSelector, useDispatch } from "react-redux"
 import { useState, useEffect } from "react"
-//import { SearchBar } from "../SearchBar/SearchBar"
 import { ViewMovies } from "./ViewMovies"
 import { getMovies } from "../../redux/actions/moviesActions"
 
@@ -24,7 +23,7 @@ export const Movies = () => {
     const pages = pageNumber => setCurrentPage(pageNumber)
 
     return (
-        <div className=''>
+        <div>
             <div className='rowContainer'>
                 <ViewMovies
                     movies={movies}

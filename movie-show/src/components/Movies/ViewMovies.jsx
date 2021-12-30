@@ -1,7 +1,7 @@
 import { BigCard } from "../Common/BigCard"
 import { Carrusel } from "../Common/Carrusel"
 
-export const ViewMovies = ({ movies, moviesPerPage, allMovies, pages }) => {
+export const ViewMovies = ({ allMovies }) => {
 
 
     const arrayMovies = allMovies.map(x => x.show)
